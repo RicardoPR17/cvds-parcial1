@@ -105,6 +105,17 @@ public class FizzBuzzTest {
     }
 
     @Test
+    public void fizzBuzz_NumeroMultiplo3y5Contiene3y5_RetornaFizzBuzz() {
+        // Arrange
+        int number = 35;
+        String expected = FizzBuzz.fizz + FizzBuzz.buzz;
+        // Act
+        String result = FizzBuzz.fizzBuzz(number);
+        // Assert
+        assertEquals(expected, result);
+    }
+
+    @Test
     public void fizzBuzz_NumeroContiene3y5NoMultiplo_RetornaFizzBuzz() {
         // Arrange
         int number = 53;
